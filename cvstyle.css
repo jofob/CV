@@ -1,7 +1,20 @@
+
 body {
-	background-color: #8a8984;
+	background-color: #ebe9db;
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
+	color: #ebe9db;
+}
+
+h1{
+	margin: 0;
+	padding:0;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
 }
 
 header {
@@ -10,14 +23,14 @@ header {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: #8a8984;
+	background-color: #ebe9db;
 	text-align: center;
 	top:0;
 	left:0;
 		-webkit-transition: all .75s;
 	    -moz-transition: all .75s;
 	    -ms-transition: all .75s;
-    transition: all .75s;
+    transition: all .75s; 
 }
 
 header img{
@@ -32,15 +45,117 @@ header img{
 
 .small {
 	height: 100px;
-	background-color: #ff0000;
+	z-index: 99;
 }
 
 .small img{
 	margin-top: -25px;
 	width: 150px;
+	-webkit-filter: brightness(160%); 
+    filter: brightness(160%);
 }
 
-#sec1{
+.headAbout{
+	background-color: #ba950a;
+}
+
+.headSkills{
+	background-color: #fa7572;
+}
+
+.headExperi{
+	background-color: #6bb7a3;
+}
+
+.headContact{
+	background-color: #252a47;
+}
+
+
+.sect{
+	position: fixed;
+	height: 30px;
 	width: 100%;
-	height: 2000px;
+	z-index:101;
+	
+}
+
+#about{
+	bottom:90px;
+	background-color: #ba950a;
+		-webkit-transition:bottom height .75s;
+	    -moz-transition: bottom height .75s;
+	    -ms-transition: bottom height .75s;
+    transition: bottom height .75s; 
+}
+#skills{
+	bottom:60px;
+	background-color:#fa7572;
+		-webkit-transition:bottom height .75s;
+	    -moz-transition: bottom height .75s;
+	    -ms-transition: bottom height .75s;
+    transition: bottom height .75s; 
+}
+#experience{
+	bottom: 30px;
+	background-color:#6bb7a3;
+		-webkit-transition:bottom height .75s;
+	    -moz-transition: bottom height .75s;
+	    -ms-transition: bottom height .75s;
+    transition: bottom height .75s; 
+}
+#contact{
+	bottom:0px;
+	background-color:#252a47;
+		-webkit-transition:bottom height .75s;
+	    -moz-transition: bottom height .75s;
+	    -ms-transition: bottom height .75s;
+    transition: bottom height .75s; 
+}
+
+.big{
+	height: 70%;
+	width: 100%;
+	position: fixed;
+	background-color: #ebe9db !important;
+}
+
+.aboutBig{
+	color: #ba950a !important;
+}
+
+.skillBig{
+	color: #fa7572 !important;
+}
+
+.experiBig{
+	color: #6bb7a3 !important;
+}
+
+.contactBig{
+	color: #252a47 !important;
+}
+
+.aboutBig{
+	height: 70%;
+	width: 100%;
+	position: fixed;
+	background-color: #ebe9db !important;
+	color: #ba950a !important;
+}
+
+
+.aboutDone{
+	bottom: 60px !important;
+	background-color: #ba950a;
+}
+
+.skillDone{
+	bottom: 30px !important;
+	background-color: #fa7572;
+}
+
+.experiDone{
+	bottom: 0px !important;
+	background-color: #6bb7a3;
 }
