@@ -3,7 +3,7 @@ body {
 	background-color: #ebe9db;
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	height: 2000px;
 	width: 100%;
 	color: #ebe9db;
 }
@@ -82,41 +82,50 @@ header img{
 
 #about{
 	bottom:90px;
+	z-index:200;
 	background-color: #ba950a;
-		-webkit-transition:bottom height .75s;
-	    -moz-transition: bottom height .75s;
-	    -ms-transition: bottom height .75s;
-    transition: bottom height .75s; 
-}
+		-webkit-transition: height .75s;
+	    -moz-transition: height .75s;
+	    -ms-transition: height .75s;
+    transition: height .75s;
+} 
+
 #skills{
 	bottom:60px;
+	z-index:199;
 	background-color:#fa7572;
-		-webkit-transition:bottom height .75s;
-	    -moz-transition: bottom height .75s;
-	    -ms-transition: bottom height .75s;
-    transition: bottom height .75s; 
+		-webkit-transition: height .75s;
+	    -moz-transition: height .75s;
+	    -ms-transition: height .75s;
+    transition: height .75s; 
+
 }
 #experience{
 	bottom: 30px;
+	z-index:198;
 	background-color:#6bb7a3;
-		-webkit-transition:bottom height .75s;
-	    -moz-transition: bottom height .75s;
-	    -ms-transition: bottom height .75s;
-    transition: bottom height .75s; 
+		-webkit-transition: height .75s;
+	    -moz-transition: height .75s;
+	    -ms-transition: height .75s;
+    transition: height .75s;
+
 }
 #contact{
 	bottom:0px;
+	z-index:197;
 	background-color:#252a47;
-		-webkit-transition:bottom height .75s;
-	    -moz-transition: bottom height .75s;
-	    -ms-transition: bottom height .75s;
-    transition: bottom height .75s; 
+		-webkit-transition: height .75s;
+	    -moz-transition: height .75s;
+	    -ms-transition: height .75s;
+    transition: height .75s; 
 }
 
 .big{
-	height: 70%;
+	height: 100%;
 	width: 100%;
 	position: fixed;
+	z-index:0 !important;
+	top: 0px !important;
 	background-color: #ebe9db !important;
 }
 
@@ -137,10 +146,6 @@ header img{
 }
 
 .aboutBig{
-	height: 70%;
-	width: 100%;
-	position: fixed;
-	background-color: #ebe9db !important;
 	color: #ba950a !important;
 }
 
@@ -148,14 +153,26 @@ header img{
 .aboutDone{
 	bottom: 60px !important;
 	background-color: #ba950a;
+		-webkit-transition: bottom .75s;
+	    -moz-transition: bottom .75s;
+	    -ms-transition: bottom .75s;
+    transition: bottom .75s;
 }
 
 .skillDone{
 	bottom: 30px !important;
 	background-color: #fa7572;
+		-webkit-transition: bottom .75s;
+	    -moz-transition: bottom .75s;
+	    -ms-transition: bottom .75s;
+    transition: bottom .75s;
 }
 
 .experiDone{
 	bottom: 0px !important;
 	background-color: #6bb7a3;
+		-webkit-transition: bottom .75s;
+	    -moz-transition: bottom .75s;
+	    -ms-transition: bottom .75s;
+    transition: bottom .75s;
 }

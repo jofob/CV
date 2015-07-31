@@ -18,22 +18,23 @@ function setup(){
 	skillDiv.onclick=skillsOn;
 	experiDiv.onclick=experiOn;
 	contactDiv.onclick=contactOn;
-}	
-/* 	window.addEventListener('scroll', function(event){
+
+ 	window.addEventListener('scroll', function(event){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        if (distanceY >= 100 && distanceY <= 300) {
+        if (distanceY >= 100 && distanceY <= 500) {
 			aboutOn();
-		} else if (distanceY > 300 && distanceY <= 500){
+		} else if (distanceY > 500 && distanceY <= 900){
 			skillsOn();
-		} else if (distanceY > 500 && distanceY <= 700){
+		} else if (distanceY > 900 && distanceY <= 1300){
 			experiOn();		
-        }else if (distanceY > 700 && distanceY <= 900){
+        }else if (distanceY > 1300 && distanceY <= 2000){
 			contactOn();		
         }else if (header.classList.contains("small")){
         	reset();
         }
     });
-} */
+}
+ 
  
 function aboutOn(){
 	header.className= "headAbout small"
