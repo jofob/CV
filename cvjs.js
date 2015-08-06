@@ -1,6 +1,7 @@
 
 window.onload = setup;
 
+
 var header;
 var aboutDiv;
 var skillDiv;
@@ -17,6 +18,8 @@ var experiContent;
 var contactContent;
 
 function setup(){
+	var mq = window.matchMedia('only screen and (max-device-width: 480px)');
+
 	fillDiv = document.getElementById("filler");
 	header = document.getElementById("hdr");
 
@@ -46,21 +49,23 @@ function setup(){
 	skillTop.onclick=skillsOn;
 	experiTop.onclick=experiOn;
 	
-
- 	window.addEventListener('scroll', function(event){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        if (distanceY >= 100 && distanceY <= 500) {
-			aboutOn();
-		} else if (distanceY > 500 && distanceY <= 900){
-			skillsOn();
-		} else if (distanceY > 900 && distanceY <= 1300){
-			experiOn();		
-        }else if (distanceY > 1300){
-			contactOn();		
-        }else if (header.classList.contains("small")){
-        	reset();
-        }
-    });
+	if (mq.matches == false){
+	//only add change on scroll functionality for non-mobile devices
+		window.addEventListener('scroll', function(event){
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+			if (distanceY >= 100 && distanceY <= 500) {
+				aboutOn();
+			} else if (distanceY > 500 && distanceY <= 900){
+				skillsOn();
+			} else if (distanceY > 900 && distanceY <= 1300){
+				experiOn();		
+			}else if (distanceY > 1300){
+				contactOn();		
+			}else if (header.classList.contains("small")){
+				reset();
+			}
+		});
+	}
 }
 
  
