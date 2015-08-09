@@ -1,21 +1,39 @@
 
 window.onload = setup;
-window.resizeTo( 300 , 600);
 
 var header;
 var aboutDiv;
 var skillDiv;
 var experiDiv;
 var contactDiv;
+var aboutTop;
+var skillsTop;
+var experiTop;
 var fillDiv;
+var contentDiv;
+var aboutContent;
+var skillContent;
+var experiContent;
+var contactContent;
 
 function setup(){
 	fillDiv = document.getElementById("filler");
 	header = document.getElementById("hdr");
+
 	aboutDiv = document.getElementById("about");
 	skillDiv = document.getElementById("skills");
 	experiDiv = document.getElementById("experience");
 	contactDiv = document.getElementById("contact");
+
+	aboutTop = document.getElementById("aboutTop");
+	skillTop = document.getElementById("skillTop");
+	experiTop = document.getElementById("experiTop");
+
+	contentDiv = document.getElementById("content");
+	aboutContent = document.getElementById("aboutContent");
+	skillContent = document.getElementById("skillContent");
+	experiContent = document.getElementById("experiContent");
+	contactContent = document.getElementById("contactContent");
 
 	
 	header.onclick=reset;
@@ -23,6 +41,11 @@ function setup(){
 	skillDiv.onclick=skillsOn;
 	experiDiv.onclick=experiOn;
 	contactDiv.onclick=contactOn;
+
+	aboutTop.onclick=aboutOn;
+	skillTop.onclick=skillsOn;
+	experiTop.onclick=experiOn;
+	
 
  	window.addEventListener('scroll', function(event){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
@@ -45,38 +68,58 @@ function aboutOn(){
 	fillDiv.className="fillAbout";
 	header.className= "headAbout small"
 	aboutDiv.className= "big aboutBig" ;
-	skillDiv.className= "sect";
+	skillDiv.className= "sect"; 
 	experiDiv.className= "sect";
 	contactDiv.className= "sect";
-	
+
+	aboutContent.classList.remove("invis");
+	skillContent.className="invis";
+	experiContent.className="invis";
+	contactContent.className="invis";
 }
 
 function skillsOn(){
 	fillDiv.className="fillSkills";
-	header.className= "headSkills small"
-	aboutDiv.className= "sect aboutDone";
+	header.className= "headSkills small";
+	aboutDiv.className= "shrink";
 	skillDiv.className= "big skillBig" ;
 	experiDiv.className="sect";
 	contactDiv.className="sect";
+	
+	aboutContent.className="invis";
+	skillContent.classList.remove("invis");
+	experiContent.className="invis";
+	contactContent.className="invis";
+
 }
 
 
 function experiOn(){
 	fillDiv.className="fillExperience";
 	header.className = "small headExperi";
-	aboutDiv.className= "sect aboutDone";
-	skillDiv.className = "sect skillDone";
+	aboutDiv.className = "shrink";
+	skillDiv.className= "shrink";
 	experiDiv.className = "big experiBig";
 	contactDiv.className="sect";
+
+	aboutContent.className="invis";
+	skillContent.className="invis";
+	experiContent.classList.remove("invis");
+	contactContent.className="invis";
 }
 
 function contactOn(){
 	fillDiv.className="fillContact";
 	header.className = "small headContact";
-	aboutDiv.className= "sect aboutDone";
-	skillDiv.className = "sect skillDone";
-	experiDiv.className = "sect experiDone";
-	contactDiv.className="big contactBig";
+	aboutDiv.className= "shrink";
+	skillDiv.className = "shrink";
+	experiDiv.className = "shrink";
+	contactDiv.className= "big contactBig";
+
+	aboutContent.className="invis";
+	skillContent.className="invis";
+	experiContent.className="invis";
+	contactContent.classList.remove("invis");
 }
 
 function reset(){
@@ -86,4 +129,9 @@ function reset(){
 	skillDiv.className="sect";
 	experiDiv.className="sect";
 	contactDiv.className="sect";
+
+	aboutContent.className="invis";
+	skillContent.className="invis";
+	experiContent.className="invis";
+	contactContent.className="invis";
 }
