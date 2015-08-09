@@ -1,6 +1,7 @@
 
 window.onload = setup;
 
+
 var header;
 var aboutDiv;
 var skillDiv;
