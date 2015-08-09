@@ -63,7 +63,12 @@ header img{
 
 .shrink{
 	height:0px;
+<<<<<<< HEAD
 	z-index:0;
+=======
+	bottom:0 !important;
+	z-index:-2 !important;
+>>>>>>> 565b340120482e6a8457fc452a44e908b72c4908
 	font-size: 0em !important;
 		-webkit-transition: all .75s;
 	    -moz-transition: all .75s;
@@ -227,6 +232,7 @@ header img{
 	    -ms-transition: transformY .5s;
     transition: transformY .5s, opacity, .30s;
 }
+<<<<<<< HEAD
 
 #content{
 	position: fixed;
@@ -317,6 +323,98 @@ header img{
 	color: #6bb7a3;
 }
 
+=======
+
+#content{
+	position: fixed;
+	top:0;
+	left:0;
+	color: #929086;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+
+}
+
+#aboutContent{
+	position: fixed;
+	width: 70%;
+	min-width: 200px;
+	max-width:500px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: left;
+	margin-top: 150px;
+		-webkit-transition: transformY .5s;
+	    -moz-transition: transformY .5s;
+	    -ms-transition: transformY .5s;
+    transition: transformY .5s, opacity, .30s;
+}
+
+#aboutContent h2{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: #ba950a;
+}
+
+#skillContent{
+	position: fixed;
+	width: 70%;
+	min-width: 200px;
+	max-width:500px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: left;
+	margin-top: 180px;
+		-webkit-transition: transformY .5s;
+	    -moz-transition: transformY .5s;
+	    -ms-transition: transformY .5s;
+    transition: transformY .5s, opacity, .30s;
+}
+
+#skillContent h2{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: #fa7572;
+}
+
+#experiContent{
+	position: fixed;
+	width: 70%;
+	min-width: 200px;
+	max-width:500px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: left;
+	margin-top: 210px;
+		-webkit-transition: transformY .5s;
+	    -moz-transition: transformY .5s;
+	    -ms-transition: transformY .5s;
+    transition: transformY .5s, opacity, .30s;
+}
+
+#experiContent h2{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: #929086;
+}
+
+>>>>>>> 565b340120482e6a8457fc452a44e908b72c4908
 #contactContent{
 	position: fixed;
 	width: 70%;
@@ -341,4 +439,76 @@ header img{
 	font-weight: 400;
 	font-size: 2em;
 	color: #252a47;
+<<<<<<< HEAD
+=======
+}
+
+
+ @media only screen and (max-device-width: 480px) {
+   /* define mobile specific styles come here */
+body {  
+	height: 100%; 
+	overflow: hidden;
+	position: fixed;
+}
+.sect {
+	height: 100px;
+}
+
+#about{
+	bottom:300px;
+} 
+
+#skills{
+	bottom:200px;
+}
+
+#experience{
+	bottom: 100px;
+}
+
+.skillDone{
+	top: 100px !important; 
+}
+
+.experiDone{
+	top: 200px !important;
+}
+
+h1{
+	font-size: 3.75em;
+}
+
+header img{
+width: 90%;
+max-width: none;
+margin-top: 300px;
+}
+
+.small{
+	height:300px;
+}
+
+.small img{
+margin-top: 20px;
+width: 500px;
+-webkit-filter: brightness(160%); 
+filter: brightness(160%);
+}
+
+.headSkills{
+	background-color: #fa7572;
+	top:100px;
+}
+
+.headExperi{
+	background-color: #6bb7a3;
+	top:200px;
+}
+
+.headContact{
+	background-color: #252a47;
+	top:300px;
+}
+>>>>>>> 565b340120482e6a8457fc452a44e908b72c4908
 }
